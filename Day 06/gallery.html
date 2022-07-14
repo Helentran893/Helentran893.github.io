@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            width: 300px;
+            height:250px;
+            display: flex;
+            flex-direction: column;
+            background-color: yellow;
+            box-shadow: 0 1px 4px rgba(0,0,0, 0.25);
+            margin: 50px;
+            border-radius: 4px;
+        }
+
+        .photo{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+        img{
+            width: 100%;
+            height: 100%;
+        
+            transition: all 2s;
+            object-fit: cover;
+        }
+
+        .name{
+            height: 20%;
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item:hover img{
+            transform: scale(1.2);
+        }
+
+        .name p{
+            transition: all 2s;
+        }
+
+        .name:hover p{
+            color: pink;
+        }
+
+        .heart{
+            width: 100px;
+            animation: heartbeat 3s ease 0.01s infinite;
+            margin:50px;
+        }
+
+        .heart img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes heartbeat{
+            10%{
+                transform: scale(1.2);
+            }
+
+            30%{ transform: scale(1.5);}
+            40%{transform: scale(1);}
+            50%{transform: scale(1.7);}
+            60%{transform: scale(1);}
+            70%{transform: scale(1.9)}
+        }
+
+
+
+        </style>
+</head>
+
+<body>
+    <div class="item">
+        <div class = "photo">
+            <img src="https://litiflorist.com/upload/1587742736722.png"
+        alt="peony">
+        </div>
+        <div class="name">
+            <p>Peony</p>
+        </div>
+    </div>
+
+    <div class="heart">
+        <img src="C:\Users\admin.DESKTOP-B3AQ52F\Desktop\Hồng\Java\Helentran893.github.io\Day 06\Heart.PNG"
+        alt="heart">
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Day 06</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<style>
+    .rect{
+        font-family: 'PT Serif', serif;
+        font-size: 60px;
+        width:100%;
+        height: 200px;
+        margin: 5px;
+        text-align: center;
+        padding: 10px;
+    animation: animate infinite 3s; 
+    justify-content: center;
+    background-color: grey;
+}
+
+@keyframes animate{
+    0%{
+    
+        background-color: grey;
+    }
+
+    20%{
+      
+        background-color: pink;
+    }
+
+    40%{
+
+        background-color: beige;
+    }
+
+    60%{
+        background-color: #dddd7e;
+    }
+
+    80%{
+        background-color: hsl(60, 56%, 91%);
+    }
+    }
+
+p:before{
+    animation: letters infinite 3s;
+    color: black;  
+    font-size: 60px;
+    content: "Techmaster";
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
+}
+
+@keyframes letters{
+    0%{
+        content: "Techmaster";
+        background-color: grey;
+    }
+
+    20%{
+        content: "Học";
+        background-color: pink;
+    }
+
+    40%{
+        content: "Là";
+        background-color: beige;
+    }
+
+    60%{
+        content: "Có";
+        background-color: #dddd7e;
+    }
+
+    80%{
+        content: "Việc";
+        background-color: hsl(60, 56%, 91%);
+    }
+}
+
+.heart{
+            width: 100px;
+            animation: heartbeat 3s ease 0.01s infinite;
+            margin:50px;
+        }
+
+        .heart img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes heartbeat{
+            10%{
+                transform: scale(1.2);
+            }
+
+            30%{ transform: scale(1.5);}
+            40%{transform: scale(1);}
+            50%{transform: scale(1.7);}
+            60%{transform: scale(1);}
+            70%{transform: scale(1.9)}
+        }
+
+</style>
+</head>
+
+<body>
+    <div class="rect">
+        <p></p>
+    </div>
+
+    <div class="heart">
+        <img src="C:\Users\admin.DESKTOP-B3AQ52F\Desktop\Hồng\Java\Helentran893.github.io\Day 06\Heart.PNG"
+        alt="heart">
+    </div>
+    
+</body>
+</html>
